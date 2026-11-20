@@ -1,41 +1,66 @@
-# Backend_JS_Mastery
+# Backend JS Mastery
 
-Source code and project resources for Backend_JS_Mastery.
+**Portfolio project** · A Node.js backend practice project covering application structure, configuration, models, controllers, and authentication.
 
 ## Overview
 
-This repository contains the source code and resources for **Backend_JS_Mastery**.
+A Node.js backend practice project covering application structure, configuration, models, controllers, and authentication.
 
-## Technologies
+## Technology Stack
 
-- JavaScript
+- `Node.js`
+- `Express`
+- `MongoDB/Mongoose`
+- `REST APIs`
+- `JavaScript`
 
-## Getting Started
+## How the Repository Works
 
-```bash
-git clone https://github.com/Kanishq10/Backend_JS_Mastery.git
-cd Backend_JS_Mastery
+```mermaid
+flowchart LR
+    N0["Client request<br/> HTTP or UI action"]
+    N1["Route<br/> Map the request"]
+    N0 --> N1
+    N2["Controller / Service<br/> Apply application logic"]
+    N1 --> N2
+    N3["Data / Response<br/> Read, update, and return data"]
+    N2 --> N3
 ```
 
-Review the project files and configuration to install dependencies and start the application.
+| Stage | Responsibility |
+|---|---|
+| **Client request** | HTTP or UI action |
+| **Route** | Map the request |
+| **Controller / Service** | Apply application logic |
+| **Data / Response** | Read, update, and return data |
 
-## Repository Contents
+## Concepts Covered
+
+- JavaScript runtime
+- Asynchronous I/O
+- Modules and packages
+- HTTP or CLI workflows
+- External integrations
+
+## Repository Map
 
 - `.gitignore`
-- `Database`
-- `Readme.md`
 - `app.js`
 - `auth.route.js`
 - `config`
 - `controllers`
+- `Database`
 - `eslint.config.js`
 - `middlewares`
 - `models`
 - `package-lock.json`
 - `package.json`
 - `subscription.route.js`
-- `user.route.js`
 
-## Contributing
+## Recruiter Summary
 
-Contributions are welcome. Fork the repository, create a feature branch, and open a pull request.
+This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+
+---
+
+<sub>Documentation is concise and project-focused; source code was not modified.</sub>
