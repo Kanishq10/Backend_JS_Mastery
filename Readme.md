@@ -1,48 +1,51 @@
 # Backend JS Mastery
 
-**Portfolio project** · A Node.js backend practice project covering application structure, configuration, models, controllers, and authentication.
+A Node.js backend demonstrating modular routing, middleware, configuration, models, and controllers.
 
 ## Overview
 
-A Node.js backend practice project covering application structure, configuration, models, controllers, and authentication.
+The repository contains an implemented application or analysis project with code organized around its primary runtime, interface, data, or automation responsibilities.
+
+## Key Features
+
+- Node.js command execution or server runtime
+- Modular source organization
+- External I/O or API integration
+- Scripted or interactive output
 
 ## Technology Stack
 
-- `Node.js`
-- `Express`
-- `MongoDB/Mongoose`
-- `REST APIs`
-- `JavaScript`
+| Area | Technology |
+|---|---|
+| Platform | Node.js |
+| Library / Framework / Tool | Express |
+| Library / Framework / Tool | MongoDB |
+| Library / Framework / Tool | JavaScript |
 
-## How the Repository Works
+## Architecture and Data Flow
 
 ```mermaid
 flowchart LR
-    N0["Client request<br/> HTTP or UI action"]
-    N1["Route<br/> Map the request"]
+    N0["HTTP Request<br/> Client sends an HTTP request."]
+    N1["Routing<br/> Express resolves the route and middleware."]
+    N2["Application Logic<br/> Controller or handler processes the request."]
+    N3["Data Access<br/> Models read or update persisted data."]
+    N4["HTTP Response<br/> The service returns status, data, or an error."]
     N0 --> N1
-    N2["Controller / Service<br/> Apply application logic"]
     N1 --> N2
-    N3["Data / Response<br/> Read, update, and return data"]
     N2 --> N3
+    N3 --> N4
 ```
 
 | Stage | Responsibility |
 |---|---|
-| **Client request** | HTTP or UI action |
-| **Route** | Map the request |
-| **Controller / Service** | Apply application logic |
-| **Data / Response** | Read, update, and return data |
+| **HTTP Request** | Client sends an HTTP request. |
+| **Routing** | Express resolves the route and middleware. |
+| **Application Logic** | Controller or handler processes the request. |
+| **Data Access** | Models read or update persisted data. |
+| **HTTP Response** | The service returns status, data, or an error. |
 
-## Concepts Covered
-
-- JavaScript runtime
-- Asynchronous I/O
-- Modules and packages
-- HTTP or CLI workflows
-- External integrations
-
-## Repository Map
+## Repository Structure
 
 - `.gitignore`
 - `app.js`
@@ -56,11 +59,23 @@ flowchart LR
 - `package-lock.json`
 - `package.json`
 - `subscription.route.js`
+- `user.route.js`
 
-## Recruiter Summary
+## Setup
 
-This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+1. Install Node.js and npm.
+2. Run `npm install` from the repository root.
+3. Start the project with the applicable script below.
 
----
+## Usage
 
-<sub>Documentation is concise and project-focused; source code was not modified.</sub>
+- `npm run start` — node app.js
+- `npm run dev` — nodemon app.js
+
+## Configuration
+
+Review `package.json` for available scripts and runtime dependencies. Add environment variables locally only when a feature requires external credentials or service configuration.
+
+## Verification
+
+- Run the project using the scripts in `package.json` and verify the primary user or API flow.
